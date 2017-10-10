@@ -1,0 +1,22 @@
+.subscribe {
+  form {
+    border-radius: 3px;
+    border: 1px solid $gray-3;
+    font-size: 0.85rem;
+    padding: 10px 10px 0px;
+    text-align: center;
+
+    input[type="text"], input[type="submit"] {
+      border-radius: 5px;
+    }
+
+    input[type="text"] {
+      width: 12rem;
+    }
+
+    input[type="submit"] {
+      background-color: $red;
+      color: $white;
+    }
+  }
+}
