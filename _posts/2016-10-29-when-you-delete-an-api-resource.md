@@ -5,7 +5,6 @@ tags: [rest, api, design]
 header-img: img/posts/when-you-delete-an-api-resource.jpg
 card-img: img/cards/when-you-delete-an-api-resource.png
 ---
-# What happens when you DELETE a resource?
 
 Have you ever found yourself publishing an API, either an internal or a public
 one? Have your ever heard from the consumers of those same APIs back? Are they
