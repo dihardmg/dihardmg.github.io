@@ -9,6 +9,9 @@
             <small>{{ post.date | date_to_string }}</small>
           </a>
         </h3>
+        <p>
+        {{ post.excerpt }}
+        </p>
       </li>
     {% endfor %}
   </ul>
