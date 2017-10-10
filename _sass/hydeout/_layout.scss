@@ -242,6 +242,15 @@ body {
   flex-flow: column nowrap;
 }
 
+#sidebar-nav-links a {
+  font-size: 0.85rem;
+}
+
+#sidebar-nav-links a:hover {
+  font-size: 0.95rem;
+  text-decoration: none;
+}
+
 #sidebar-icon-links {
   max-width: 100%;
   flex-flow: row wrap;
