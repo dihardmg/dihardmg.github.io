@@ -3,21 +3,29 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            Hydeout
+title:            'Ilija Eftimov'
 tagline:          'A Jekyll theme'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
-url:              https://fongandrew.github.io/hydeout
+description:
+url:              'http://ieftimov.com'
 baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
                   # other pages at root, see the paginate_path and
                   # sidebar_blog_link below.
+permalink: :title
 
+# Author info
 author:
-  name:           'Andrew Fong'
-  url:            https://twitter.com/fongandrewc
+  name:           'Ilija Eftimov'
+  url:            'https://twitter.com/fteem'
+  github:         'fteem'
+  twitter:        'fteem'
+  email:          'ileeftimov+blog@gmail.com'
 
-paginate:         5
+disqus:
+  shortname:    'eftimov'
+
+paginate:         10
 # paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
 
@@ -35,3 +43,5 @@ sidebar_home_link:  true
                                 # to enable a separate blog link.
 github:
   repo:             https://github.com/fongandrew/hydeout
+
+google_analytics: 'UA-11264459-2'
