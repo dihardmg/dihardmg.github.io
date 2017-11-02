@@ -7,8 +7,8 @@ card-img: img/cards/understand-how-why-add-idempotent-requests-api.png
 ---
 
 Idempotency is an often used term in computer science. It's meaning to some might
-not be known, to others it's very well known. The explanation of idempotency that
-Wikipedia [offers](https://en.wikipedia.org/wiki/Idempotence) is:
+not be known, to others it's very well known. The explanation for idempotency on
+[Wikipedia](https://en.wikipedia.org/wiki/Idempotence) is:
 
 > ... the property of certain operations in mathematics and computer science that
 > they can be applied multiple times without changing the result beyond the
