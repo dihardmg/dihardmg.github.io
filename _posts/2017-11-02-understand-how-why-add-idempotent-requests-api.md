@@ -186,7 +186,7 @@ it.
 The first step to adding idempotency token support is to be able to easily
 send it. If you are using a API browser like Postman or Paw, you have that
 ability out of the box. These API browsers allow us to send any type of params
-or headers. For example, this is what a successful requst to this endpoint looks
+or headers. For example, this is what a successful request to this endpoint looks
 like, via Postman:
 
 ![](/img/posts/idempotency-key-bids-successful-request.png)
