@@ -544,7 +544,7 @@ When it comes to storing keys with values the most popular choice (with a good
 reason!) is Redis. It is riddiculously fast in what it does, writing and reading
 to it with Ruby is very simple, and it even provides a TTL (Time To Live) which
 means it will automatically expire our stale keys without us writing a single
-line of code. Of course, Redis provides much more, for for the purpose of this
+line of code. Of course, Redis provides much more, but for the purpose of this
 article, it seems to fit just like a glove.
 
 Note: If you are unfamiliar with Redis, I would recommend giving a shot at their
