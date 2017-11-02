@@ -192,8 +192,8 @@ like, via Postman:
 ![](/img/posts/idempotency-key-bids-successful-request.png)
 
 As you can notice, we explicitly set the endpoint to return no body which will
-set the HTTP status to 204, therefore providing enough context if when the bid
-is accepted by the system.
+set the HTTP status to 204, therefore providing enough context if and when the
+bid is accepted by the system.
 
 The internals of the endpoint are quite simple - we find the lot by the `lot_id`
 from the URI, and we create a `Bid` for it with the `amount` sent in the
