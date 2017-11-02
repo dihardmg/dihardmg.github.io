@@ -609,15 +609,15 @@ module IdempotentRequest
       action = get(idempotency_key)
 
       if action.present?
-        status = action['status']
-        headers = action['headers']
-        response = action['response']
+	status = action[:status]
+	headers = action[:headers]
+	response = action[:response]
       else
-        status, headers, response = @app.call(env)
-        response = response.body if response.respond_to?(:body)
+	status, headers, response = @app.call(env)
+	response = response.body if response.respond_to?(:body)
 
-        payload = payload(status, headers, response)
-        set(idempotency_key, payload)
+	payload = payload(status, headers, response)
+	set(idempotency_key, payload)
       end
 
       [status, headers, response]
@@ -629,22 +629,26 @@ module IdempotentRequest
   private
 
   def get(key)
-    data = redis.hget namespaced_key(key), :data
+    data = redis.hgetall namespaced_key(key)
     return nil if data.blank?
 
-    Oj.load(data)
+    {
+      status: data['status'],
+      headers: Oj.load(data['headers']),
+      response: Oj.load(data['response'])
+    }
   end
 
   def set(key, payload)
-    redis.hset namespaced_key(key), :data, payload
+    redis.hmset namespaced_key(key), *payload
   end
 
   def payload(status, headers, response)
-    Oj.dump(
-      status: status,
-      headers: headers.to_h,
-      response: response
-    )
+    [
+      :status, status,
+      :headers, Oj.dump(headers.to_h),
+      :response, Oj.dump(response)
+    ]
   end
 
   def namespaced_key(idempotency_key)
@@ -658,7 +662,7 @@ is literally the same, only the way we store and read the data changes, from
 both storage and code perspective. This time, we use `Oj.dump` to serialize and
 `Oj.load` to deserialize our object to/from JSON. Also, storing the data is done
 by calling the `redis` client, namely the
-[`hset`](https://redis.io/commands/hset) and
+[`hmset`](https://redis.io/commands/hmset) and
 [`hget`](https://redis.io/commands/hget) methods.
 
 {% highlight ruby %}
@@ -671,12 +675,13 @@ and will access the key with the value of `key`. If present, this will retrieve
 the serialized JSON object, or `nil` if not present.
 
 {% highlight ruby %}
-redis.hset REDIS_NAMESPACE, key, payload
+redis.hmset REDIS_NAMESPACE, key1, payload1, key2, payload2
 {% endhighlight %}
 
-`hset` will execute a `HSET` command in Redis, which will set a new key in the
-hash, where the key will be the value of `key`, and the value will be the hash
-that `payload` is assigned to.
+`hmset` will execute a `HMSET` command in Redis, which will set a new key in the
+hash, where the key will be the value of `key1`, and the value will be the hash
+that `payload1` is assigned to. The same key - value pair arguments scheme
+continues for the rest of the arguments.
 
 ### TTL
 
@@ -722,15 +727,15 @@ module IdempotentRequest
       action = get(idempotency_key)
 
       if action.present?
-        status = action['status']
-        headers = action['headers']
-        response = action['response']
+	status = action[:status]
+	headers = action[:headers]
+	response = action[:response]
       else
-        status, headers, response = @app.call(env)
-        response = response.body if response.respond_to?(:body)
+	status, headers, response = @app.call(env)
+	response = response.body if response.respond_to?(:body)
 
-        payload = payload(status, headers, response)
-        set(idempotency_key, payload)
+	payload = payload(status, headers, response)
+	set(idempotency_key, payload)
       end
 
       [status, headers, response]
@@ -742,23 +747,27 @@ module IdempotentRequest
   private
 
   def get(key)
-    data = redis.hget namespaced_key(key), :data
+    data = redis.hgetall namespaced_key(key)
     return nil if data.blank?
 
-    Oj.load(data)
+    {
+      status: data['status'],
+      headers: Oj.load(data['headers']),
+      response: Oj.load(data['response'])
+    }
   end
 
   def set(key, payload)
-    redis.hset namespaced_key(key), :data, payload
+    redis.hmset namespaced_key(key), *payload
     redis.expire namespaced_key(key), EXPIRE_TIME
   end
 
   def payload(status, headers, response)
-    Oj.dump(
-      status: status,
-      headers: headers.to_h,
-      response: response
-    )
+    [
+      :status, status,
+      :headers, Oj.dump(headers.to_h),
+      :response, Oj.dump(response)
+    ]
   end
 
   def namespaced_key(idempotency_key)
