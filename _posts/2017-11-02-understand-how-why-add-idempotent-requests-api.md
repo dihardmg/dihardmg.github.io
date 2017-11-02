@@ -183,7 +183,7 @@ bid as an integer. If you would like to see how the endpoint performs, you can
 fetch the [repo](https://github/fteem/auctionz), set it up locally and play with
 it.
 
-The first step to adding an idempotency token support is to be able to easily
+The first step to adding idempotency token support is to be able to easily
 send it. If you are using a API browser like Postman or Paw, you have that
 ability out of the box. These API browsers allow us to send any type of params
 or headers. For example, this is what a successful requst to this endpoint looks
