@@ -801,7 +801,7 @@ like this one, namely:
 2. using a `YAML::Store`; and
 3. using Redis
 
-We also briefly discussed what kind of challeges each of these appraoches bring,
+We also briefly discussed what kind of challenges each of these approaches bring,
 and we also took a stab at implementing the idempotent requests mechanism using
 a Rails middleware.
 
