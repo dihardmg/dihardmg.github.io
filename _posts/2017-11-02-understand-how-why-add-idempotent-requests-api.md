@@ -776,7 +776,7 @@ allowing enough time for the requests to be registered as completed by the
 clients.
 
 Of course, if you are implementing a mechanism for idempotent requests for your
-APIs, the expiration time should be set to your liking, because the rata should
+APIs, the expiration time should be set to your liking, because the data should
 have a retention period that makes sense for the problem you are solving/facing.
 
 Nevertheless, although our final solution is not very far from our previous
