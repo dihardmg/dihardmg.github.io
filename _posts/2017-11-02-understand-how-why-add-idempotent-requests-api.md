@@ -781,7 +781,7 @@ have a retention period that makes sense for the problem you are solving/facing.
 
 Nevertheless, although our final solution is not very far from our previous
 ones, whether it's using a relational databse or a storage in file, Redis allows
-us to more easily scale the soluation while keeping itself clean from stale data.
+us to more easily scale the solution while keeping itself clean from stale data.
 
 ## Wrapping up
 
