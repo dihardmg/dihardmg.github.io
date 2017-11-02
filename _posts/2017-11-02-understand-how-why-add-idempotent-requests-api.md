@@ -406,7 +406,7 @@ send the response immediatelly.
 Although the idempotent requests mechanism is interesting, keeping all of these
 keys can be expensive, especially if you do it in an nonoptimal way like by using
 the database. Whenever you are in doubt if data like this should be stored in
-a database, always think about how crucial is the data stored to your business.
+a database, always think about how crucial to your business this data is.
 For the scope of our example, this data is not business critical, therefore we
 could offload it to a different type of storage.
 
