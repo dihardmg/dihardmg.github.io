@@ -240,7 +240,7 @@ headers to our requests. For example, in Postman that would look like:
 This will apply the `Idempotency-Key` header to the request, for our API to pick
 up and validate. So, how would our API accomplish this?
 
-In cases like this one, I personally prefer opaque appraoches, meaning, an
+In cases like this one, I personally prefer opaque approaches, meaning, an
 approach that the stack can work with without any additional hassle to the daily
 work of the developers of the APIs. One of those approaches is by adding a
 middleware that will take care of logging the idempotency keys and returning
