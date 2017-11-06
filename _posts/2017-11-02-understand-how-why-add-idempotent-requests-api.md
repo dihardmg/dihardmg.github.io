@@ -89,7 +89,7 @@ curl https://api.stripe.com/v1/charges \
 {% endhighlight %}
 
 As you can imagine, just like with bidding, designing APIs whose consumers can
-do actual money transcations are quite important to be very safe from various
+do actual money transactions are quite important to be very safe from various
 failures, especially where the sending or the receiving party cannot process
 the request/response fully.
 
