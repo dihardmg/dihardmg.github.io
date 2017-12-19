@@ -30,6 +30,6 @@ tutor.
 If you want to get in touch, you can ping me via
 <a href="mailto:ileeftimov+blog@gmail.com">email</a>. Or, Twitter.
 
-Oh, you can also get my CV
-<a href="/CV-Ilija-Eftimov.pdf" target="_blank">here</a>. Disclaimer: it's very
-likely that it's outdated.
+Oh, you can also see my CV <a href="/CV" target="_blank">here</a>. Feel free to
+<a href="mailto:ileeftimov+blog@gmail.com">email me</a> if you would like to get
+an up-to-date PDF version.
