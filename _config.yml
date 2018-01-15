@@ -4,7 +4,7 @@ highlighter:      rouge
 
 # Setup
 title:            'Ilija Eftimov'
-tagline:          'A Jekyll theme'
+tagline:          'Musings on building software'
 description:
 url:              'http://ieftimov.com'
 baseurl:          # the optional subpath of your site, e.g. "/blog"
