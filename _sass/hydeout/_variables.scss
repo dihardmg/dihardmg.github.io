@@ -46,6 +46,8 @@ $code-font-family: Menlo, Monaco, "Courier New", monospace !default;
 $code-color: #bf616a !default;
 
 // Hyde theming
-$sidebar-bg-color: $gray-6 !default;
+$sidebar-bg-color: $white !default;
 $sidebar-sticky: true !default;
 $layout-reverse: false !default;
+$sidebar-font-color: $gray-5 !default;
+$sidebar-font-color-lighter: $gray-4 !default;
