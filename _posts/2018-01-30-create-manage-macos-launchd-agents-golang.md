@@ -478,12 +478,12 @@ Package `syscall` contains an interface to the low-level operating system
 primitives. An important note about `syscall` is that it is locked down since
 Go v1.4. This means that any code outside of the standard library that uses
 the `syscall` package should be migrated to use the new `golang.org/x/sys`
-[package](golang.org/x/sys). Since we are using **only** the signals constants of
+[package](https://golang.org/x/sys). Since we are using **only** the signals constants of
 `syscall` we can get away with this.
 
 (If you want to read more about the package lockdown, you can see
 [the rationale on locking it down](https://docs.google.com/document/d/1QXzI9I1pOfZPujQzxhyRy6EeHYTQitKKjHfpq0zpxZs/edit)
-by the Go team and the new [golang.org/s/sys](golang.org/x/sys) package.)
+by the Go team and the new [golang.org/s/sys](https://golang.org/x/sys) package.)
 
 Having the basics of the packages out of the way, let's go step by step through
 the new lines of code added:
