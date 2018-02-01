@@ -41,7 +41,7 @@ program that will execute, among a list of other properties. Another aspect to
 keep in mind is that `launchd` decides if a program will be treated as a daemon
 or an agent by where the program XML is located.
 
-Over at [launchd.info](launchd.info), there's a simple table that shows where
+Over at [launchd.info](https://launchd.info), there's a simple table that shows where
 you would (or not) place your program's XML:
 
 {% highlight text %}
