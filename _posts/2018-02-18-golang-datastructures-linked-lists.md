@@ -367,8 +367,9 @@ them with the same algorithms for arrays:
 ║ Action    ║ Array   ║ Linked list ║
 ╠═══════════╬═════════╬═════════════╣
 ║ Search    ║ O(1)    ║ O(n)        ║
-║ Insert    ║ O(n)    ║ O(1)        ║
-║ Delete    ║ O(n)    ║ O(1)        ║
+║ Prepend   ║ O(1)    ║ O(1)        ║
+║ Append    ║ O(n)    ║ O(1)        ║
+║ Delete    ║ O(n)    ║ O(n)        ║
 ╚═══════════╩═════════╩═════════════╝
 {% endhighlight %}
 
@@ -384,3 +385,7 @@ You can see the whole implementation of the `Feed` and play with it
 [here](https://play.golang.org/p/29fm86DNNcV). Also, Go has it's own linked list
 implementation, with some nice functions already built in. You can see it's
 documentation [here](https://golang.org/pkg/container/list/).
+
+*EDIT* 20.02.2018 10:00 CET: Previous verion of the article wrongly stated that
+the big-O complexity of the delete function is `O(1)`. Changed to `O(n)` after
+pointed out by [Bart de Goede](https://twitter.com/bartdegoede).
