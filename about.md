@@ -11,7 +11,7 @@ My name is Ilija Eftimov and I am a software engineer. You can find me on
 
 I work for [Catawiki](http://catawiki.com) as a backend developer, building
 APIs, microservices, scaling our platform, reviewing code, hunting bugs and
-slaying an occsaional dragon.
+slaying an occasional dragon.
 
 Before that, I spent three years as a full-stack Ruby on Rails developer,
 working for <a target='_blank' href='http://siyelo.com'>Siyelo</a>.
