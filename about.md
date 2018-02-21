@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "👨🏻‍💻 About me"
+title: "About me"
 sidebar_link: true
 ---
 
