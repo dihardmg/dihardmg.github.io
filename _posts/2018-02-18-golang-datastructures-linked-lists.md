@@ -366,7 +366,8 @@ them with the same algorithms for arrays:
 ╔═══════════╦═════════╦═════════════╗
 ║ Action    ║ Array   ║ Linked list ║
 ╠═══════════╬═════════╬═════════════╣
-║ Search    ║ O(1)    ║ O(n)        ║
+║ Access    ║ O(1)    ║ O(n)        ║
+║ Search    ║ O(n)    ║ O(n)        ║
 ║ Prepend   ║ O(1)    ║ O(1)        ║
 ║ Append    ║ O(n)    ║ O(1)        ║
 ║ Delete    ║ O(n)    ║ O(n)        ║
@@ -389,3 +390,9 @@ documentation [here](https://golang.org/pkg/container/list/).
 *EDIT* 20.02.2018 10:00 CET: Previous verion of the article wrongly stated that
 the big-O complexity of the delete function is `O(1)`. Changed to `O(n)` after
 pointed out by [Bart de Goede](https://twitter.com/bartdegoede).
+
+*EDIT* 22.02.2018 23:00 CET: Previous verion of the article wrongly stated that
+the big-O complexity of searching in an array is `O(1)` instead of `O(N)`. This
+was a mixup of *Access* and *Search* on my side. This is fixed by adding
+separate rows in the table for *Search* and *Access* and their respective time
+complexities.
