@@ -11,6 +11,11 @@ layout: default
   <div class="post-body">
     {{ content }}
     {% include post-tags.html post=page %}
+
+    {% if page.acknowledgements %}
+      <br/>
+      <small>Acknowledgements: {{ page.acknowledgements }}</small>
+    {% endif %}
   </div>
 
   {% include subscribe.md %}
