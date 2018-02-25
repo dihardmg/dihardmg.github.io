@@ -384,7 +384,7 @@ retrieval/searching, then we would have to pick the correct data structure for
 the problem we are dealing with.
 
 You can see the whole implementation of the `Feed` and play with it
-[here](https://play.golang.org/p/29fm86DNNcV). Also, Go has it's own linked list
+[here](https://play.golang.org/p/fqLPjf_ekD6). Also, Go has it's own linked list
 implementation, with some nice functions already built in. You can see it's
 documentation [here](https://golang.org/pkg/container/list/).
 
@@ -397,3 +397,7 @@ the big-O complexity of searching in an array is `O(1)` instead of `O(N)`. This
 was a mixup of *Access* and *Search* on my side. This is fixed by adding
 separate rows in the table for *Search* and *Access* and their respective time
 complexities.
+
+*EDIT* 25.02.2018 17:00 CET: Previous version of the article had a buggy
+implementation of the `Insert` function, which was pointed out by Albert Shirima
+in the comments.
