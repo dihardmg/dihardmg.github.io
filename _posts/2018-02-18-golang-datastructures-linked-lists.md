@@ -314,15 +314,16 @@ func (f *Feed) Insert(newPost *Post) {
 	if f.length == 0 {
 		f.start = newPost
 	} else {
-		var nextPost *Post
+		var previousPost *Post
 		currentPost := f.start
 
 		for currentPost.publishDate < newPost.publishDate {
-			currentPost = currentPost.next
-			nextPost = currentPost.next
+			previousPost = currentPost
+			currentPost = previousPost.next
 		}
-		currentPost.next = newPost
-		newPost.next = nextPost
+
+		previousPost.next = newPost
+		newPost.next = currentPost
 	}
 	f.length++
 }
