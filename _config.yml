@@ -3,7 +3,7 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            'Otorus' Blog
+title:            'Otorus Blog'
 tagline:          'A Blog about Web Developer and curcol'
 description:
 url:              'http://otorus.com'
