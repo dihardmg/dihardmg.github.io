@@ -3,10 +3,10 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Setup
-title:            'Ilija Eftimov'
-tagline:          'Musings on building software'
+title:            'Otorus' Blog
+tagline:          'A Blog about Web Developer and curcol'
 description:
-url:              'http://ieftimov.com'
+url:              'http://otorus.com'
 baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
                   # If you want to move just the blog index pages but keep
@@ -16,15 +16,15 @@ permalink: :title
 
 # Author info
 author:
-  name:           'Ilija Eftimov'
-  url:            'https://twitter.com/fteem'
-  github:         'fteem'
-  twitter:        'fteem'
-  email:          'ileeftimov+blog@gmail.com'
-  telegram:       'ieftimovcom'
+  name:           'Didik Hariyanto'
+  url:            #
+  github:         'dihardmg'
+  twitter:        #
+  email:          'com.didikhariyanto@gmail.com'
+  telegram:       'otorus'
 
 disqus:
-  shortname:    'eftimov'
+  shortname:    'dihardmg'
 
 paginate:         10
 # paginate_path:    '/page:num'
@@ -45,4 +45,4 @@ sidebar_home_link:  true
 github:
   repo:             https://github.com/fongandrew/hydeout
 
-google_analytics: 'UA-11264459-2'
+google_analytics: 'UA-115300125-1'
