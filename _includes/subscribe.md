@@ -6,6 +6,6 @@
     Jika kamu suka article ini, atau ingin berterima kasih, kamu dapat  
     <a href="https://buymeacoff.ee/dihardmg"
     target="_blank">buy me a cup of coffee</a>
-    - I'll be over the moon!
+    
   </p>
 </section>

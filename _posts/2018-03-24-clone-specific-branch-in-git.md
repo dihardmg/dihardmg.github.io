@@ -1,23 +1,12 @@
 ---
-title: Clone a specific branch in git
 layout: post
-date: 2018-03-24 13:41
-image: /assets/images/post/001/1803241.png
-headerImage: true
-category: git
-tag:
-- git
-- branch
-- Clone
-blog: true
-author: Dihardmg
-description: Clone a specific branch in git
----
-### Summary:
-Clone a specific branch in git
-
+tags: [git, branch, clone]
+title: "Clone a specific branch in git"
+card-img: img/post/001/1803241.png
+acknowledgements: "Null"
 ---
 
+git clone pada brach tertentu pada suatu repo github
 
 ## Permasalaah untuk pull pada specific branch:
 
@@ -50,7 +39,3 @@ git branch
 ```
 
 ___
-
-Semoga bermanfaat.<br>
-Best Regards.<br>
-Dihardmg.
