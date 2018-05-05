@@ -1,13 +1,10 @@
 <section class="subscribe">
   <p>
-    Mailing lists are part of the past! <b>Stay up to date</b> and join my
-    <a href="https://t.me/{{site.author.telegram}}" target="_blank">Telegram channel</a>
-    to receive fresh articles, code snippets, Github repositories and interesting
-    programming links straight to your pocket.
+    otorus.com, merupakan blog pribadi berisi curhatan, dan pengalaman seputar dunia software engineering.
   </p>
   <p>
-    If you liked this article (or any of my other articles) and you want to
-    say thanks, you can <a href="https://buymeacoff.ee/ieftimov"
+    Jika kamu suka article ini, atau ingin berterima kasih, kamu dapat  
+    <a href="https://buymeacoff.ee/dihardmg"
     target="_blank">buy me a cup of coffee</a>
     - I'll be over the moon!
   </p>
