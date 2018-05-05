@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: [java, magic square, Aplikasi magic square, pNetbeans]
-title: "sMagic square"
+title: "Magic square"
 card-img: img/post/001/1803091.JPG
 acknowledgements: "Null"
 ---
