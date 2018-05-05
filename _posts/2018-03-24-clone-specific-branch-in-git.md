@@ -6,7 +6,7 @@ card-img: img/post/001/1803241.png
 acknowledgements: "Null"
 ---
 
-git clone pada brach tertentu pada suatu repo github
+git clone pada branch tertentu pada suatu repo git
 
 ## Permasalaah untuk pull pada specific branch:
 
