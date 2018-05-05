@@ -1,10 +1,12 @@
 ---
 layout: post
 tags: [java, magic square, Aplikasi magic square, pNetbeans]
-title: "suatu persegi dengan ukuran n x n petak di mana setiap baris, kolom dan diagonal memiliki jumlah yang sama"
+title: "sMagic square"
 card-img: img/post/001/1803091.JPG
 acknowledgements: "Null"
 ---
+
+Magic square adalah suatu persegi dengan ukuran n x n petak di mana setiap baris, kolom dan diagonal memiliki jumlah yang sama.
 
 ## Sejarah:
 
