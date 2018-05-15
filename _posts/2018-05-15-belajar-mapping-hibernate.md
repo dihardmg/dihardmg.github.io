@@ -27,10 +27,6 @@ CREATE TABLE alamat(
   alamat character varying(255) NOT NULL,
   id_karyawan character varying(255) NOT NULL
 );
-
-ALTER TABLE alamat
-ADD CONSTRAINT fk_alamat_karyawan FOREIGN KEY (id_karyawan) REFERENCES karyawan(id);
-
 ```
 
 
@@ -142,7 +138,7 @@ ketika saya menghapus di sisi `One`, maka di sisi `Many` juga ikut terhapus
     cascade = CascadeType.REFRESH,orphanRemoval = true)`
 
 - `cascade = CascadeType.REFRESH` supaya untuk refresh ketika data di sisi one di update, maka data di sisi `Many` juga ke update.
-- `orphanRemoval = true` supaya ketika data di sisi `One` di hapus, maka di sisi many juga terhapus.
+- `orphanRemoval = true` supaya ketika data di sisi `One` di hapus, maka di sisi `Many` juga terhapus.
 
 ## Penutup
 Demikan cerita singkat kali ini mengenai relasi mapping hibernate, semoga berguna,terutama bagi saya sendiri karena saya sering lupa jadi saya menuliskan ini di blog. ;)
