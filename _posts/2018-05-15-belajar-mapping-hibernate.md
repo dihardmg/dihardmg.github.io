@@ -34,7 +34,7 @@ ADD CONSTRAINT fk_alamat_karyawan FOREIGN KEY (id_karyawan) REFERENCES karyawan(
 ```
 
 
-### Hibernate Mapping
+## Hibernate Mapping
 Untuk relasi hibernate mapping pada java seperti di bawah ini.
 
 ```java
@@ -134,5 +134,5 @@ Hibernate:
         id=?
 ```
 
-####Penutup
+## Penutup
 Demikan curcol kali ini mengenai relasi mapping hibernate, semoga berguna,terutama bagi saya sendiri karena saya sering lupa jadi saya menuliskan ini di blog.
