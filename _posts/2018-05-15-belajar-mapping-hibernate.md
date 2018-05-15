@@ -1,17 +1,17 @@
 ---
 layout: post
-tags: [mapping, mapping, relasi, hibernate]
+tags: [mapping, relasi, hibernate, OneToMany, ManyToOne]
 title: "Belajar mapping relasi hibernate"
-card-img: #
-acknowledgements: "null"
+card-img: img/post/001/belajar-mapping-relasi-hibernate.png
+acknowledgements: "om Endy "
 ---
-pada dua hari yang lalu saya belajar ngulik mapping relasi di dibernate, dan membuat saya jadi penasaran karena saya belum dong juga untuk menerapkan pada projek kecil kecilan. Setalah berselancar di goole saya menemukan blog yang sangat keren yaitu punya om endy <a href="https://software.endy.muhardin.com/java/memahami-mapping-relasi-hibernate/">disini</a> dari situ saya mulai paham apa itu Aggregation vs Composition.
+pada dua hari yang lalu saya belajar ngulik mapping relasi di dibernate, dan membuat saya jadi penasaran karena saya belum dong juga ;( untuk menerapkan pada projek kecil kecilan. Setalah berselancar di google, saya menemukan blog yang sangat keren  yaitu punya om endy <a href="https://software.endy.muhardin.com/java/memahami-mapping-relasi-hibernate/">disini</a> dari situ saya mulai paham apa itu Aggregation vs Composition.
 
 ## Contoh mapping:
 
-Disini saya akan memulai untuk relasi antara dua table yaitu table karyawan dan alamat. Dimana nanti goal mampping nya pada sisi karyawan ketika di hapus akan juga hapus data child relasi pada table alamat. untuk mapping pada sisi karyawan @OneToMany dan di sisi alamat @ManyToOne
+Disini saya akan memulai untuk relasi antara dua table yaitu table karyawan dan alamat. Dimana nanti goal mampping nya pada sisi karyawan ketika di hapus akan juga hapus data child relasi pada table alamat. untuk mapping pada sisi karyawan `@OneToMany` dan di sisi alamat `@ManyToOne`
 
-![pic1](/img/post/001/belajar-mapping-relasi-hibernate.png)
+![Belajar mapping relasi hibernate](/img/post/001/belajar-mapping-relasi-hibernate.png)
 
 
 ```
@@ -134,5 +134,15 @@ Hibernate:
         id=?
 ```
 
+## Mapping relasi composition
+ketika saya menghapus di sisi `One`, maka di sisi `Many` juga ikut terhapus
+
+`@OneToMany(
+    mappedBy = "karyawan",
+    cascade = CascadeType.REFRESH,orphanRemoval = true)`
+
+- `cascade = CascadeType.REFRESH` supaya untuk refresh ketika data di sisi one di update, maka data di sisi `Many` juga ke update.
+- `orphanRemoval = true` supaya ketika data di sisi `One` di hapus, maka di sisi many juga terhapus.
+
 ## Penutup
-Demikan curcol kali ini mengenai relasi mapping hibernate, semoga berguna,terutama bagi saya sendiri karena saya sering lupa jadi saya menuliskan ini di blog.
+Demikan cerita singkat kali ini mengenai relasi mapping hibernate, semoga berguna,terutama bagi saya sendiri karena saya sering lupa jadi saya menuliskan ini di blog. ;)
