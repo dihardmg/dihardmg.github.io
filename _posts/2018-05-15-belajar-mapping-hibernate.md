@@ -3,7 +3,7 @@ layout: post
 tags: [mapping, mapping, relasi, hibernate]
 title: "Belajar mapping relasi hibernate"
 card-img: #
-acknowledgements: "om <a href="https://software.endy.muhardin.com/java/memahami-mapping-relasi-hibernate/">Endy</a>"
+acknowledgements: "null"
 ---
 pada dua hari yang lalu saya belajar ngulik mapping relasi di dibernate, dan membuat saya jadi penasaran karena saya belum dong juga untuk menerapkan pada projek kecil kecilan. Setalah berselancar di goole saya menemukan blog yang sangat keren yaitu punya om endy <a href="https://software.endy.muhardin.com/java/memahami-mapping-relasi-hibernate/">disini</a> dari situ saya mulai paham apa itu Aggregation vs Composition.
 
