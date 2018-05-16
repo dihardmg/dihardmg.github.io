@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [Hibernate, Indexes, Auto index, spring boot]
+tags: [Hibernate, Indexes, Auto index, java, spring boot]
 title: "Belajar Hibernate Create Auto Index"
 card-img: img/post/001/database-index.jpg
 acknowledgements: "null"
@@ -8,10 +8,10 @@ acknowledgements: "null"
 Kita pernah mendengar tentang index atau indexing, mungkin saja belum atau juga sudah, pada artikel kali ini akan membahas apa itu Indexing database, bagaimana menerapkanya pada database PostgreSQL ke Java Spring boot. 
 
 ## Apa itu database index ?
-Databasae index adalah struktur data untuk meningkatkan kecepatan operasi pengambilan data pada tabel basis data. Mudahnya menyimpan nilai spesifik sebuah kolom pada sebuah table.
+Database index adalah struktur data untuk meningkatkan kecepatan operasi pengambilan data pada tabel basis data. Mudahnya menyimpan nilai spesifik sebuah kolom pada sebuah table.
 
 ## Apa fungsi database index ?
-Indeks digunakan untuk menemukan data dengan cepat tanpa harus mencari setiap baris dalam tabel basis data setiap kali tabel basis data diakses. 
+Index digunakan untuk menemukan data dengan cepat tanpa harus mencari setiap baris dalam tabel basis data setiap kali tabel basis data diakses. 
 ![database indexing](/img/post/001/database-index.jpg)
 <small><a href="https://techcrunch.com/2018/03/09/infosums-first-product-touts-decentralized-big-data-insights/">sumber gambar</a></small>
 
@@ -39,7 +39,7 @@ CREATE TABLE karyawan(
 ````
 
 ## Membuat auto index pada spring boot
-Sebenernya sangat mudah sekali menambahkan index di java spring boot. Pada table entity menambahkan annotation `@Table` selanjutnya isi dengan nilai indexes, kemudian column yang jadikan index adalah nama `(nama_karyawan_idx)` & keterangan `(ket_karyawan_idx)` ahh ribet amat ya langsung aja deh ke java nya :D
+Sebenarnya sangat mudah sekali menambahkan index di java spring boot. Pada table entity menambahkan annotation `@Table` selanjutnya isi dengan `@Index` nilai indexes, kemudian column yang jadikan index adalah nama `(nama_karyawan_idx)` & keterangan `(ket_karyawan_idx)` ahh ribet amat ya langsung aja deh ke java nya :D
 
 ``` java
 @Entity
