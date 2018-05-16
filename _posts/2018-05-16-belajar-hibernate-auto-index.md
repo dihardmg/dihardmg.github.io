@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: [Hibernate, Indexes, Auto index, spring boot]
-title: "Belajar hibernate Create Auto Index"
+title: "Belajar Hibernate Create Auto Index"
 card-img: img/post/001/database-index.jpg
 acknowledgements: "null"
 ---
