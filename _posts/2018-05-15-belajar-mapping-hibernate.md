@@ -1,11 +1,11 @@
 ---
 layout: post
 tags: [mapping, relasi, hibernate, OneToMany, ManyToOne]
-title: "Belajar mapping relasi hibernate"
+title: "Belajar Mapping Relasi Hibernate"
 card-img: img/post/001/belajar-mapping-relasi-hibernate.png
 acknowledgements: "om Endy "
 ---
-pada dua hari yang lalu saya belajar ngulik mapping relasi di dibernate, dan membuat saya jadi penasaran karena saya belum dong juga ;( untuk menerapkan pada projek kecil kecilan. Setalah berselancar di google, saya menemukan blog yang sangat keren  yaitu punya om endy <a href="https://software.endy.muhardin.com/java/memahami-mapping-relasi-hibernate/">disini</a> dari situ saya mulai paham apa itu Aggregation vs Composition.
+pada dua hari yang lalu saya belajar ngulik mapping relasi di di hibernate, dan membuat saya jadi penasaran karena saya belum dong juga ;( untuk menerapkan pada projek kecil kecilan. Setalah berselancar di google, saya menemukan blog yang sangat keren  yaitu punya om endy <a href="https://software.endy.muhardin.com/java/memahami-mapping-relasi-hibernate/">disini</a> dari situ saya mulai paham apa itu Aggregation vs Composition.
 
 ## Contoh mapping:
 
@@ -65,7 +65,6 @@ public class Karyawan {
 
 
 //Alamat
-
 @Data
 @Entity
 @Table(name = "alamat")
