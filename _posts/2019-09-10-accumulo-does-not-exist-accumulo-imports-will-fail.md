@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: [Hadoop, Hortonwork Sanbox]
-title: "Eaccumulo does not exist! Accumulo imports will fail"
+title: "accumulo does not exist! Accumulo imports will fail"
 card-img: 
 acknowledgements: "null"
 ---
