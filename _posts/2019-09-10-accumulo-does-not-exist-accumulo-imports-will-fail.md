@@ -1,8 +1,8 @@
 ---
 layout: post
 tags: [Hadoop, Hortonwork Sanbox]
-title: "error check sqoop version hortonwork sanbox"
-card-img: i
+title: "Eaccumulo does not exist! Accumulo imports will fail"
+card-img: 
 acknowledgements: "null"
 ---
 
