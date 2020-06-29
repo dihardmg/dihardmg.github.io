@@ -6,7 +6,6 @@ card-img:
 acknowledgements: "ETL"
 ---
 
-# Running Pentaho data integration di MacOs
 
 ## 1. Overview
 

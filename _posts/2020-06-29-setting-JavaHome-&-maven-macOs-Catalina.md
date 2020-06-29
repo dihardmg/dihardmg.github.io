@@ -6,7 +6,6 @@ card-img:
 acknowledgements: "null"
 ---
 
-# Setting Java home & Install maven di MacOS Catalina
 
 ## 1. Overview
 
