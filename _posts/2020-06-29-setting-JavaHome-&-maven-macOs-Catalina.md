@@ -11,19 +11,24 @@ acknowledgements: "null"
 
 Artikel ini akan membahas setting java home dan maven di MacOS Catalina, sebelumnya download maven projek terlebih dahulu di web berikut https://maven.apache.org/download.cgi
 selanjutnya ekstrak file dan taruh file maven ke path :
+
  ```
  /opt/apache-maven
  ```
 
 ## 2. Bikin file bernama bash_profile
     $ touch  ~/.bash_profile
-## 3. Buka file bash_profile dan ketik berikut    
+
+## 3. Buka file bash_profile dan ketik berikut 
+
     //JAVA_HOME
     export JAVA_HOME=$(/usr/libexec/java_home)
 
     //MAVEN
     export PATH=$PATH:/opt/apache-maven/bin
+
 ## 4. Jikalau sudah, dicek apakah sudah berhasil atau belum proses path java home dan maven nya.
+
     $ echo $JAVA_HOME
     $ mvn -version
 
